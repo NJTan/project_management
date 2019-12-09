@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#2BE28D"
+        android:textSize="28dp"
+        android:text="负责人的操作"
+        />
+
+    <TableLayout
+        android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1">
+        <TableRow android:layout_marginTop="50dp"
+                  android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/add_porject"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:text="添加项目计划"
+                android:textSize="20dp" />
+        </TableRow>
+        <TableRow android:layout_marginTop="20dp"
+                  android:gravity="center"
+            >
+                <Button
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/delect_project"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:text="删除项目计划" />
+        </TableRow>
+         <TableRow  android:layout_marginTop="20dp"
+                    android:gravity="center"
+             >
+                <Button
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/modify_project"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:text="项目批注" />
+         </TableRow>
+         <TableRow  android:layout_marginTop="20dp"
+                    android:gravity="center"
+             >
+               <Button
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/search_project"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:text="查询项目详情">
+                </Button>
+        </TableRow>
+</TableLayout>
+</LinearLayout>
